@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+void swapping(int &a,int &b)
+{
+    a=a+b;
+    b=a-b;
+    a=a-b;
+}
+int main()
+{
+    int c,d;
+    cout<<"Enter 2 numbers: ";
+    cin>>c>>d;
+    cout<<endl;
+    swapping(c,d);
+    cout<<c<<" "<<d;
+}
